@@ -1,0 +1,16 @@
+[app]
+  port            = 5000
+  log_component   = "server"
+
+[[datasources]]
+  name                = "default-db"
+  access_type         = "password"
+  username            = "DBUser"
+  password            = "DBPassword"
+  schema              = "invoice_v1"
+  [datasources.options]
+    host              = "localhost"
+    timezone          = "+08:00"
+    dialect           = "mysql"
+    [datasources.options.dialectOptions]
+      decimalNumbers  = true

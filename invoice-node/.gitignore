@@ -1,0 +1,30 @@
+# dependencies
+/node_modules
+
+#deployment
+/build
+/logs
+.gen
+.ngploy
+
+# misc
+.DS_Store
+
+/.history
+
+production.toml
+local.toml
+staging.toml
+test.toml
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+static/.media/*
+
+.DS_Store
+*.mwb.bak
+
+# vs code
+.vscode
